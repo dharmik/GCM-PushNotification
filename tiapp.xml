@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">pfitKFU9luXqK13Whl41ZNpdwTqtrw2B</property>
+    <property name="acs-oauth-key-production" type="string">o0kVMtbdYiwf8PUxowLTmxDZ8kXpqwNx</property>
+    <property name="acs-api-key-production" type="string">usl86ciT5q27X7Kzhof7vqh8pl9uvC4g</property>
+    <property name="acs-oauth-secret-development" type="string">7FDYQvy7fuC8bbLHaGhZb1wWMUpJQRCW</property>
+    <property name="acs-oauth-key-development" type="string">11heUnRzbT6xQhndXSHCd0ocWNkHI2SQ</property>
+    <property name="acs-api-key-development" type="string">XDu6wDNGCNxfX7MyP6NIkDxXx4KG4T4a</property>
+    <!-- Property to configure push notifications -->
+    <!-- By default, GCM is used if this property is not specified -->
+    <property name="acs-push-type-development" type="string">gcm</property>
+    <property name="acs-push-type-production" type="string">gcm</property>
+    <property name="acs-push-type" type="string">gcm</property>
+    <id>com.titutorial.cloudtest</id>
+    <name>cloudtestapp</name>
+    <version>1.0</version>
+    <publisher>HP</publisher>
+    <url>http://</url>
+    <description>not specified</description>
+    <copyright>2013 by HP</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>d39bea60-8634-4f41-bec2-dfd8496cef8d</guid>
+    <property name="ti.ui.defaultunit" type="string">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+        <module platform="android">ti.cloudpush</module>
+    </modules>
+    <deployment-targets>
+        <target device="iphone">false</target>
+        <target device="ipad">false</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+        <target device="mobileweb">true</target>
+        <target device="tizen">false</target>
+    </deployment-targets>
+    <sdk-version>3.1.3.GA</sdk-version>
+    <property name="ti.deploytype">test</property>
+</ti:app>
